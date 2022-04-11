@@ -1,6 +1,23 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import styled from 'styled-components';
+
+import Grid from '../src/components/Layout/Grid'
+import FullWidthSection from "../src/components/Layout/FullWidthSection";
+import MaxWidthSection from "../src/components/Layout/MaxWidthSection";
+import Row from "../src/components/Layout/Row";
+
+const HunterHeader = styled(FullWidthSection)`
+  padding: 4rem 1.5rem;
+  background-color: lightcoral;
+`;
+
+// const Nav = styled(Row)`
+//   a {
+//     margin-right: 1rem;
+//   }
+// `;
 
 export default function Home() {
   return (
@@ -52,7 +69,23 @@ export default function Home() {
           </a>
         </div>
 
-        <h2 className={styles.description}>But Moving on With GR HUNTER</h2>
+
+        {/*GI HUNTER
+        Tutorial: Responsive CSS Grid System for React
+        https://www.youtube.com/watch?v=sI1iC600FiQ&list=PL1o4UW0Tw5ZYwRczE2BU-Q58Gcm1zcZRn&index=51&t=156s
+         */}
+        <Grid>
+         <HunterHeader>
+         {/* <Nav as="nav" sd={2} ed={12} sm={2} em={6} ss={2} se={6}>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+        </Nav> */}
+         </HunterHeader>
+        </Grid>
+
+        <h2 className={styles.description}>But Moving on With GRID HUNTER</h2>
+
+
       </main>
 
       <footer className={styles.footer}>
