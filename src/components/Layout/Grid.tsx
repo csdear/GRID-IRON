@@ -1,4 +1,5 @@
-import styled from "styled-components";
+// import styled from "styled-components";
+import styled, { createGlobalStyle, css } from "styled-components";
 
 const Grid = styled.div`
   display: grid;
