@@ -4,7 +4,8 @@ import styles from "../styles/Home.module.css";
 import styled from "styled-components";
 
 //GRIDRION THU
-import Box from "../src/components/Box/Box"
+import Box from "../src/components/Box/Box";
+import Grid from "../src/components/Grid/Grid";
 
 // HUNTER import Grid from "../src/components/Layout/Grid";
 import FullWidthSection from "../src/components/Layout/FullWidthSection";
@@ -89,7 +90,23 @@ export default function Home() {
         <h2 className={styles.description}>But Moving on With GRID HUNTER</h2>
 
         <h2 className={styles.description}>On to With GRIDIRON THU</h2>
-        <Box>Box</Box>
+
+        <Grid container>
+
+          <Grid item>
+            <Box>Box 1</Box>
+          </Grid>
+
+          <Grid item>
+            <Box>Box 2</Box>
+          </Grid>
+
+          <Grid item>
+            <Box>Box 3</Box>
+          </Grid>
+
+        </Grid>
+
       </main>
 
       <footer className={styles.footer}>
