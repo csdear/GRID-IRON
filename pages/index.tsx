@@ -3,7 +3,10 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import styled from "styled-components";
 
-import Grid from "../src/components/Layout/Grid";
+//GRIDRION THU
+import Box from "../src/components/Box/Box"
+
+// HUNTER import Grid from "../src/components/Layout/Grid";
 import FullWidthSection from "../src/components/Layout/FullWidthSection";
 import MaxWidthSection from "../src/components/Layout/MaxWidthSection";
 import Row from "../src/components/Layout/Row";
@@ -74,16 +77,19 @@ export default function Home() {
         https://www.youtube.com/watch?v=sI1iC600FiQ&list=PL1o4UW0Tw5ZYwRczE2BU-Q58Gcm1zcZRn&index=51&t=156s
          */}
 
-        <Grid>
-          <HunterHeader>
+        {/* <Grid>
+          <HunterHeader> */}
             {/* <Nav as="nav" sd={2} ed={12} sm={2} em={6} ss={2} se={6}>
           <a href="#">Home</a>
           <a href="#">About</a>
         </Nav> */}
-          </HunterHeader>
-        </Grid>
+          {/* </HunterHeader>
+        </Grid> */}
 
         <h2 className={styles.description}>But Moving on With GRID HUNTER</h2>
+
+        <h2 className={styles.description}>On to With GRIDIRON THU</h2>
+        <Box>Box</Box>
       </main>
 
       <footer className={styles.footer}>
