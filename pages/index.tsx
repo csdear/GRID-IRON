@@ -95,17 +95,21 @@ export default function Home() {
 
         <Grid container>
 
-        <Grid item cols={12}>
+        <Grid item cols={6}>
             <Box>Box 1</Box>
           </Grid>
 
-          {/* <Grid item cols={3}>
+          <Grid item cols={6}>
             <Box>Box 2</Box>
           </Grid>
 
-          <Grid item cols={3}>
+          <Grid item cols={6}>
             <Box>Box 3</Box>
-          </Grid> */}
+          </Grid>
+
+          <Grid item cols={6}>
+            <Box>Box 3</Box>
+          </Grid>
 
         </Grid>
 
