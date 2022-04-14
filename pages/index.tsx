@@ -91,9 +91,10 @@ export default function Home() {
 
       </main>
 
-      <h2 className={styles.description}>On to With GRIDIRON THU</h2>
 
-        <Grid container>
+      <h2 className={styles.description}>GRIDIRON | THU NGHIEM</h2>
+      <div className="gridThu" style={{background: 'lightgreen', margin: '16px'}}>
+         <Grid container spacing="sm">  {/*Change the spacing here - sm, md or lg - ...wonder if we could create a prop for container size too? */}
 
         <Grid item cols={6}>
             <Box>Box 1</Box>
@@ -108,10 +109,11 @@ export default function Home() {
           </Grid>
 
           <Grid item cols={6}>
-            <Box>Box 3</Box>
+            <Box>Box 4</Box>
           </Grid>
 
         </Grid>
+      </div>
 
       <footer className={styles.footer}>
         <a

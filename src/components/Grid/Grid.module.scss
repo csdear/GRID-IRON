@@ -1,3 +1,10 @@
+// 2.0
+$spacing: (
+    "sm": 8px,
+    "md": 16px,
+    "lg": 24px,
+);
+
 .Grid {
     &_container {
         display: flex;
@@ -13,12 +20,30 @@
             flex-basis: $i/12 * 100%;
         }
     }
-    // No longer needed with @for above, but retaining
-    // &_cols_3 {
-    //     flex-basis: 25% = 3/12 * 100%;
+
+    // 2.0
+    @each $name, $value in $spacing {
+        // a 2.1 addition i dont understand. Something to do with the margin (16px)... see 20:20
+        &_spacing_#{$name} {
+            margin: -$value;
+        }
+
+        &_spacing_#{$name} > &_item {
+            padding: $value;
+        }
+    }
+
+    // start  here, this is lo-tech way, 1.0  but see updates (2.0) @each and $spacing evolution above.
+    // &_spacing_sm > &_item {
+    //     padding: 8px;
     // }
-    // &_cols_4 {
-    //     flex-basis: 25% = 4/12 * 100%;
+
+    // &_spacing_md > &_item {
+    //     padding: 16px;
+    // }
+
+    // &_spacing_lg > &_item {
+    //     padding: 24px;
     // }
 
 
