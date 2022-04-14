@@ -89,25 +89,25 @@ export default function Home() {
 
         <h2 className={styles.description}>But Moving on With GRID HUNTER</h2>
 
-        <h2 className={styles.description}>On to With GRIDIRON THU</h2>
+      </main>
+
+      <h2 className={styles.description}>On to With GRIDIRON THU</h2>
 
         <Grid container>
 
-          <Grid item>
+        <Grid item cols={12}>
             <Box>Box 1</Box>
           </Grid>
 
-          <Grid item>
+          {/* <Grid item cols={3}>
             <Box>Box 2</Box>
           </Grid>
 
-          <Grid item>
+          <Grid item cols={3}>
             <Box>Box 3</Box>
-          </Grid>
+          </Grid> */}
 
         </Grid>
-
-      </main>
 
       <footer className={styles.footer}>
         <a

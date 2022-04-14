@@ -6,4 +6,19 @@
     &_item {
         display: block;
     }
+    // execute until 12.
+    @for $i from 1 to 13 {
+        &_cols_#{$i} {
+            flex-basis: $i/12 * 100%;
+        }
+    }
+    // No longer needed with @for above, but retaining
+    // &_cols_3 {
+    //     flex-basis: 25% = 3/12 * 100%;
+    // }
+    // &_cols_4 {
+    //     flex-basis: 25% = 4/12 * 100%;
+    // }
+
+
 }
