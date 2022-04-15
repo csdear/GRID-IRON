@@ -101,19 +101,19 @@ export default function Home() {
         <GridRuler spacing="sm"></GridRuler>
         <Grid container spacing="sm">  {/*Change the spacing here - sm, md or lg - ...wonder if we could create a prop for container size too? */}
 
-        <Grid item cols={6}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
             <Box>Box 1</Box>
           </Grid>
 
-          <Grid item cols={6}>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
             <Box>Box 2</Box>
           </Grid>
 
-          <Grid item cols={6}>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
             <Box>Box 3</Box>
           </Grid>
 
-          <Grid item cols={6}>
+          <Grid item xs={12} sm={6} md={4} lg={3}>
             <Box>Box 4</Box>
           </Grid>
 

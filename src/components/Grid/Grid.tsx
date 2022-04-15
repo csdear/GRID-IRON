@@ -9,13 +9,19 @@ const Grid: FunctionComponent<{
     children: ReactNode;
     container?: boolean;
     item?: boolean;
-    cols?: Cols;
+    xs?: Cols;
+    sm?: Cols;
+    md?: Cols;
+    lg?: Cols;
     spacing?: Spacing;
-}> = ({ children, container, item, cols, spacing }) => {
+}> = ({ children, container, item, xs, sm, md, lg, spacing }) => {
     const classNames = cn({
         [styles.Grid_container]: container,
         [styles.Grid_item]: item,
-        [styles[`Grid_cols_${cols}`]]: cols,
+        [styles[`Grid_xs_${xs}`]]: xs,
+        [styles[`Grid_sm_${sm}`]]: sm,
+        [styles[`Grid_md_${md}`]]: md,
+        [styles[`Grid_lg_${lg}`]]: lg,
         [styles[`Grid_spacing_${spacing}`]]: spacing,
     });
 
