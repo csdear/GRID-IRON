@@ -11,6 +11,8 @@ import Grid from "../src/components/Grid/Grid";
 import FullWidthSection from "../src/components/Layout/FullWidthSection";
 import MaxWidthSection from "../src/components/Layout/MaxWidthSection";
 import Row from "../src/components/Layout/Row";
+import GridRuler from "../src/components/GridRuler/GridRuler";
+import { relative } from "path";
 
 const HunterHeader = styled(FullWidthSection)`
   padding: 4rem 1.5rem;
@@ -93,8 +95,11 @@ export default function Home() {
 
 
       <h2 className={styles.description}>GRIDIRON | THU NGHIEM</h2>
-      <div className="gridThu" style={{background: 'lightgreen', margin: '16px'}}>
-         <Grid container spacing="sm">  {/*Change the spacing here - sm, md or lg - ...wonder if we could create a prop for container size too? */}
+      <div className="gridThu" style={{background: 'lightgreen', margin: '16px', position: 'relative'}}>
+
+        {/* Change BOTH spacing props here for correct ruler spacing */}
+        <GridRuler spacing="sm"></GridRuler>
+        <Grid container spacing="sm">  {/*Change the spacing here - sm, md or lg - ...wonder if we could create a prop for container size too? */}
 
         <Grid item cols={6}>
             <Box>Box 1</Box>
