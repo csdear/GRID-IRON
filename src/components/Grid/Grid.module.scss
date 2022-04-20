@@ -11,6 +11,8 @@ $breakpoints: (
     "lg": 1280px,
 );
 
+$justifyContent: (flex-start, flex-end, center, space-between);
+
 @mixin breakpoint($name) {
     @media screen and (min-width: map-get($breakpoints, $name )) {
         @content;
@@ -67,6 +69,12 @@ $breakpoints: (
 
         &_spacing_#{$name} > &_item {
             padding: $value;
+        }
+    }
+
+    @each $value in $justifyContent {
+        &_justifyContent_#{$value} {
+            justify-content: $value;
         }
     }
 

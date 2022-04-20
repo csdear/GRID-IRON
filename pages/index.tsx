@@ -99,21 +99,23 @@ export default function Home() {
 
         {/* Change BOTH spacing props here for correct ruler spacing */}
         <GridRuler spacing="sm"></GridRuler>
-        <Grid container spacing="sm">  {/*Change the spacing here - sm, md or lg - ...wonder if we could create a prop for container size too? */}
 
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        {/* Justify Prop Options : 'flex-start' | 'center' | 'flex-end' | 'space-between'; */}
+        {/* Spacing Prop Options :  - sm, md or lg - ...wonder if we could create a prop for container size too? */}
+        <Grid container spacing="sm" justifyContent="flex-end">
+        <Grid item xs={12} sm={3} md={4} lg={3}>
             <Box>Box 1</Box>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Grid item xs={12} sm={3} md={4} lg={3}>
             <Box>Box 2</Box>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Grid item xs={12} sm={3} md={4} lg={3}>
             <Box>Box 3</Box>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={4} lg={3}>
+          <Grid item xs={12} sm={3} md={4} lg={3}>
             <Box>Box 4</Box>
           </Grid>
 
