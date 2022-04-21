@@ -3,15 +3,16 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import styled from "styled-components";
 
-//GRIDRION THU
+//GRIDRION THU NGHIEM
 import Box from "../src/components/Box/Box";
 import Grid from "../src/components/Grid/Grid";
+import GridRuler from "../src/components/GridRuler/GridRuler";
 
 // HUNTER import Grid from "../src/components/Layout/Grid";
 import FullWidthSection from "../src/components/Layout/FullWidthSection";
 import MaxWidthSection from "../src/components/Layout/MaxWidthSection";
 import Row from "../src/components/Layout/Row";
-import GridRuler from "../src/components/GridRuler/GridRuler";
+
 import { relative } from "path";
 
 const HunterHeader = styled(FullWidthSection)`
@@ -95,27 +96,34 @@ export default function Home() {
 
 
       <h2 className={styles.description}>GRIDIRON | THU NGHIEM</h2>
-      <div className="gridThu" style={{background: 'lightgreen', margin: '16px', position: 'relative'}}>
+      <div className="gridThu" style={{background: 'lightgreen', margin: '16px', position: 'relative', height: '100vh'}}>
 
         {/* Change BOTH spacing props here for correct ruler spacing */}
         <GridRuler spacing="sm"></GridRuler>
 
-        {/* Justify Prop Options : 'flex-start' | 'center' | 'flex-end' | 'space-between'; */}
-        {/* Spacing Prop Options :  - sm, md or lg - ...wonder if we could create a prop for container size too? */}
-        <Grid container spacing="sm" justifyContent="flex-end">
-        <Grid item xs={12} sm={3} md={4} lg={3}>
+        {/* GRID CONTAINER */}
+          {/* OPTION justifyContent : Prop values  'flex-start' | 'center' | 'flex-end' | 'space-between'; */}
+          {/* OPTION alignItems : Prop values  'flex-start' | 'center' | 'flex-end' |  */}
+          {/* OPTION Spacing : Prop Options :  - sm, md or lg - ...wonder if we could create a prop for container size too? */}
+        <Grid
+          container
+          spacing="sm"
+          alignItems="center"
+          style={{ height: "100%" }}>
+
+          <Grid item xs={1} sm={6} md={4} lg={3}>
             <Box>Box 1</Box>
           </Grid>
 
-          <Grid item xs={12} sm={3} md={4} lg={3}>
+          <Grid item xs={1} sm={6} md={4} lg={3}>
             <Box>Box 2</Box>
           </Grid>
 
-          <Grid item xs={12} sm={3} md={4} lg={3}>
+          <Grid item xs={1} sm={6} md={4} lg={3}>
             <Box>Box 3</Box>
           </Grid>
 
-          <Grid item xs={12} sm={3} md={4} lg={3}>
+          <Grid item xs={1} sm={6} md={4} lg={3}>
             <Box>Box 4</Box>
           </Grid>
 
